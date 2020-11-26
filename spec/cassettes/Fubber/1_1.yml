@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.followupboss.com/v1/events
+    body:
+      encoding: UTF-8
+      string: '{"type":"Property Inquiry","message":"I am interested in 6825 Mulholland
+        Dr, ...","description":"Move-in: 12/28/2013","person":{"firstName":"Melissa
+        ","lastName":"Hartman","emails":[{"value":"m.hartman@example.com","type":"home"}],"phones":[{"value":"(555)
+        555-1234","type":"home"}],"tags":["Lease option"],"sourceUrl":"http://click.email.zillow.com/?qs=1e120cec11e3","customBirthday":"2/16/1990"},"property":{"street":"6825
+        Mulholland Dr","city":"Los Angeles","state":"CA","code":"90068","mlsNumber":"14729339","price":"310000","forRent":"0","url":"http://www.zillow.com/homedetails/6825-Mulholland-Dr-Los-Angeles-CA-90068/2109065822_zpid/","type":"Residential"},"propertySearch":{"type":"Lot","neighborhood":"Cahuenga
+        Pass","city":"Los Angeles","state":"CA","code":"90068","minPrice":100000,"maxPrice":500000},"campaign":{"source":"google","medium":"organic","term":"Cahuenga
+        Pass land","content":"","campaign":""}}'
+    headers:
+      Content-Type:
+      - application/json
+      Source:
+      - zoocasa
+      X-System:
+      - zoocasa
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Thu, 26 Nov 2020 21:08:54 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: '{"id":7700,"created":"2020-11-26T21:08:54Z","updated":"2020-11-26T21:08:54Z","createdVia":"API","lastActivity":"2020-11-26T21:08:54Z","name":"Melissa
+        Hartman","firstName":"Melissa","lastName":"Hartman","stage":"Lead","stageId":2,"source":"<unspecified>","sourceUrl":"http:\/\/click.email.zillow.com\/?qs=1e120cec11e3","delayed":false,"contacted":0,"price":310000,"assignedLenderId":null,"assignedLenderName":null,"assignedUserId":1,"assignedPondId":null,"assignedTo":"Anthony
+        Tomasone","tags":["Lease option"],"emails":[{"value":"m.hartman@example.com","type":"home","status":"Invalid","isPrimary":1}],"phones":[{"value":"(555)
+        555-1234","type":"home","status":"Not Validated","isPrimary":1,"normalized":"5555551234"}],"addresses":[],"picture":null,"socialData":[],"claimed":true,"collaborators":[{"id":1,"name":"Anthony
+        Tomasone","assigned":true,"role":"Broker"}],"teamLeaders":[],"pondMembers":[]}'
+  recorded_at: Thu, 26 Nov 2020 21:08:54 GMT
+recorded_with: VCR 6.0.0
