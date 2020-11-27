@@ -1,8 +1,6 @@
 # Fubber
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fubber`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This is a gem to facilitate sending API requests to Followupboss.com
 
 ## Installation
 
@@ -22,7 +20,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+Fubber.api_key = 'INSERT API KEY'
+Fubber.system_key = 'INSERT SYSTEM KEY'
+Fubber.system = 'INSERT SYSTEM'
+fub = Fubber.client
+event_data = {
+    source: "MyAwesomeWebsite.com",
+    system: "AwesomeSiteBuilder",
+    type: "General Inquiry",
+    message: "Looking for a house under $500k in the East Boston area",
+    person: {
+        firstName: "John",
+        lastName: "Smith",
+        emails: [{value: "john@gmail.com"}],
+        phones: [{value: "555-555-5555"}]
+    }
+}
+response = fub.create_event(event_data)
+```
 
 ## Development
 
