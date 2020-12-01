@@ -47,7 +47,7 @@ describe Fubber, :vcr do
     END_JSON
   end
 
-  it do
+  it 'create_event' do
     fub_client = Fubber.client
     response = fub_client.create_event(event)
     parsed_response = response.parsed_response

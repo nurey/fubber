@@ -10,14 +10,17 @@ module Fubber
     include HTTParty
 
     base_uri 'https://api.followupboss.com'
-    basic_auth Fubber.api_key, ''
-    headers Hash[
-      'Content-Type', 'application/json',
-      'source', 'zoocasa',
-      'X-System', Fubber.system,
-      'X-System-Key', Fubber.system_key
-    ]
 
     include Fubber::Event
+
+    def initialize
+      self.class.basic_auth Fubber.api_key, ''
+      self.class.headers Hash[
+        'Content-Type', 'application/json',
+        'Source', Fubber.system,
+        'X-System', Fubber.system,
+        'X-System-Key', Fubber.system_key
+      ]
+    end
   end
 end
