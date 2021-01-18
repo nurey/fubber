@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Fubber
   module Event
     def create_event(event)

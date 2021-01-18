@@ -47,12 +47,15 @@ describe Fubber, :vcr do
     END_JSON
   end
 
-  it 'create_event' do
-    fub_client = Fubber.client
-    response = fub_client.create_event(event)
-    parsed_response = response.parsed_response
-    expect(parsed_response).not_to be_nil
-    expect(parsed_response).to include(Hash['assignedTo', 'Anthony Tomasone'])
+  let(:fub_client) { Fubber.client }
+
+  describe '.create_event' do
+    it 'responds with expected payload' do
+      response = fub_client.create_event(event)
+      parsed_response = response.parsed_response
+      expect(parsed_response).not_to be_nil
+      expect(parsed_response).to include(Hash['assignedTo', 'Anthony Tomasone'])
+    end
   end
 end
 

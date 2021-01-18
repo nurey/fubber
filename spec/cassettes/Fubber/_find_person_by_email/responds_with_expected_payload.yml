@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.followupboss.com/v1/people?email=ilia.lobsanov@example.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Source:
+      - zoocasa
+      X-System:
+      - zoocasa
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 15 Jan 2021 20:57:07 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Window:
+      - '10'
+      X-Ratelimit-Limit:
+      - '750'
+      X-Ratelimit-Remaining:
+      - '749'
+      X-Ratelimit-Context:
+      - global
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - cc427149d916d88eebce9eff7f4c62bb
+    body:
+      encoding: UTF-8
+      string: '{"_metadata":{"collection":"people","offset":0,"limit":10,"total":1,"next":null,"nextLink":null},"people":[{"id":302155,"created":"2016-04-06T14:05:35Z","updated":"2021-01-12T18:13:45Z","createdVia":"Import","lastActivity":"2021-01-12T18:13:43Z","name":"Ilia
+        Lobsanov","firstName":"Ilia","lastName":"Lobsanov","stage":"Lead","stageId":2,"source":"zoocasa","sourceUrl":"","delayed":false,"contacted":1,"price":1675000,"assignedLenderId":null,"assignedLenderName":null,"assignedUserId":1,"assignedPondId":null,"assignedTo":"Zoocasa
+        Team","tags":["new"],"emails":[{"value":"ilia.lobsanov@example.com","type":"home","status":"Valid","isPrimary":1}],"phones":[{"value":"647-996-9080","type":"mobile","status":"Valid","isPrimary":1,"normalized":"6479969080"}],"addresses":[],"picture":{"small":"https:\/\/s.followupboss.com\/pictures\/aa21722850e2b41a145d3ea94944f55a.jpg"},"socialData":{"name":"Ilia
+        Lobsanov","firstName":"Ilia","lastName":"Lobsanov","gender":"Male","age":"","location":"Toronto,
+        Ontario, Canada","company":"Zoocasa, Brokerage","title":"Senior Software Developer","bio":"Senior
+        Developer Specializing in Ruby","topics":"","facebook":"","twitter":"https:\/\/twitter.com\/ilia_test","googleProfile":"","googlePlus":"","linkedIn":"https:\/\/www.linkedin.com\/in\/lobsanov"},"claimed":true,"firstToClaimOffer":false,"collaborators":[{"id":1,"name":"Zoocasa
+        Team","assigned":true,"role":"Broker"}],"teamLeaders":[],"pondMembers":[]}]}'
+  recorded_at: Fri, 15 Jan 2021 20:57:07 GMT
+recorded_with: VCR 6.0.0
