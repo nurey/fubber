@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.followupboss.com/v1/people?id=402359
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Source:
+      - zoocasa
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 26 May 2021 17:17:08 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Window:
+      - '10'
+      X-Ratelimit-Limit:
+      - '750'
+      X-Ratelimit-Remaining:
+      - '749'
+      X-Ratelimit-Context:
+      - global
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - 0cd666ae03c9163f00374b09c6bd9e72
+    body:
+      encoding: UTF-8
+      string: '{"_metadata":{"collection":"people","offset":0,"limit":10,"total":1,"next":null,"nextLink":null},"people":[{"id":402359,"created":"2021-05-24T16:48:25Z","updated":"2021-05-26T16:32:29Z","createdVia":"API","lastActivity":"2021-05-26T16:32:29Z","name":"John
+        Brennan","firstName":"John","lastName":"Brennan","stage":"Lead","stageId":2,"source":"zoocasa","sourceId":33,"sourceUrl":"","delayed":false,"contacted":0,"price":0,"assignedLenderId":null,"assignedLenderName":null,"assignedUserId":1,"assignedPondId":null,"assignedTo":"Zoocasa
+        Team","tags":["Unsubscribed"],"emails":[{"value":"brennanjohnm@gmail.com","type":"home","status":"Valid","isPrimary":1}],"phones":[{"value":"9058693801","type":"mobile","status":"Valid","isPrimary":1,"normalized":"9058693801"}],"addresses":[],"picture":{"small":"https:\/\/s.followupboss.com\/pictures\/d93738ed97b217bae6067b00fe12486a.jpg"},"socialData":{"name":"John
+        Brennan","firstName":"John","lastName":"Brennan","gender":"Male","age":"","location":"Barrie,
+        Ontario, Canada","company":"Healthscreen","title":"Emr Trainer","bio":"Learning
+        Experience Architect. Provocateur. The tweets\/retweets posted here do not
+        represent any other entities; they are entirely personal.","topics":"","facebook":"","twitter":"https:\/\/twitter.com\/Wound_up_Bird","googleProfile":"","googlePlus":"","linkedIn":""},"claimed":true,"firstToClaimOffer":false,"collaborators":[{"id":1,"name":"Zoocasa
+        Team","assigned":true,"role":"Broker"}],"teamLeaders":[],"pondMembers":[]}]}'
+  recorded_at: Wed, 26 May 2021 17:17:08 GMT
+recorded_with: VCR 6.0.0
