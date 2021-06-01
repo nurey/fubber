@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.followupboss.com/v1/users?id=168
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Source:
+      - zoocasa
+      X-System:
+      - zoocasa
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 01 Jun 2021 19:54:20 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Window:
+      - '10'
+      X-Ratelimit-Limit:
+      - '750'
+      X-Ratelimit-Remaining:
+      - '749'
+      X-Ratelimit-Context:
+      - global
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - 918585bfaef2dbb47b8dcbaf407b8b1a
+    body:
+      encoding: UTF-8
+      string: '{"_metadata":{"collection":"users","offset":0,"limit":10,"total":1,"next":null,"nextLink":null},"users":[{"id":168,"created":"2021-05-03T19:25:27Z","updated":"2021-05-22T01:10:07Z","name":"John
+        Agent","firstName":"John","lastName":"Agent","email":"john.agent@zoocasa.com","phone":"647-123-4567","role":"Agent","status":"Active","timezone":"America\/Toronto","beta":true,"picture":[],"isOwner":false,"groups":[],"teamIds":[4,13,1],"teamLeaderOf":[],"leadEmailAddress":"john.agent@followupboss.me"}]}'
+  recorded_at: Tue, 01 Jun 2021 19:54:20 GMT
+recorded_with: VCR 6.0.0

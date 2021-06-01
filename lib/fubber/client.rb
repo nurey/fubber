@@ -1,6 +1,7 @@
 require 'active_support/core_ext/module/attribute_accessors'
 require 'fubber/event'
 require 'fubber/person'
+require 'fubber/user'
 
 module Fubber
   mattr_accessor :api_key
@@ -14,6 +15,7 @@ module Fubber
 
     include Fubber::Event
     include Fubber::Person
+    include Fubber::User
 
     def initialize
       warn %{WARNING: Fubber api key not specified. Please set `Fubber.api_key = '...'`} if Fubber.api_key.nil?
