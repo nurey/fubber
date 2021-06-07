@@ -29,6 +29,15 @@ describe Fubber, :vcr do
     end
   end
 
+  describe '.find_person_by_name' do
+    it 'responds with expected payload' do
+      response = fub_client.find_person_by_name('Jane Doe')
+      parsed_response = response.parsed_response
+      expect(parsed_response).not_to be_nil
+      expect(parsed_response.dig('people', 0, 'firstName')).to eq('Jane')
+    end
+  end
+
   describe '.update_person' do
     let(:person_id) { 302155 }
 

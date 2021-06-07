@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.followupboss.com/v1/people?name=Jane%20Doe
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Source:
+      - zoocasa
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 07 Jun 2021 20:12:23 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Window:
+      - '10'
+      X-Ratelimit-Limit:
+      - '750'
+      X-Ratelimit-Remaining:
+      - '749'
+      X-Ratelimit-Context:
+      - global
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - 3a6ccb54f4fcebae4146f2cbdc2adf1a
+    body:
+      encoding: UTF-8
+      string: '{"_metadata":{"collection":"people","offset":0,"limit":10,"total":1,"next":null,"nextLink":null},"people":[{"id":407180,"created":"2021-06-02T00:28:23Z","updated":"2021-06-03T13:09:08Z","createdVia":"API","lastActivity":"2021-06-07T20:07:23Z","name":"Jane
+        Doe","firstName":"Jane","lastName":"Doe","stage":"Lead","stageId":2,"source":"zoocasa","sourceId":33,"sourceUrl":"","delayed":false,"contacted":0,"price":0,"assignedLenderId":null,"assignedLenderName":null,"assignedUserId":1,"assignedPondId":null,"assignedTo":"Zoocasa
+        Team","tags":["Bounced"],"emails":[{"value":"janedoe@example.com","type":"home","status":"Valid","isPrimary":1}],"phones":[{"value":"777
+        666 6666","type":"mobile","status":"Valid","isPrimary":1,"normalized":"7776666666"}],"addresses":[],"picture":null,"socialData":[],"claimed":true,"firstToClaimOffer":false,"collaborators":[{"id":1,"name":"Zoocasa
+        Team","assigned":true,"role":"Broker"}],"teamLeaders":[],"pondMembers":[]}]}'
+  recorded_at: Mon, 07 Jun 2021 20:12:23 GMT
+recorded_with: VCR 6.0.0

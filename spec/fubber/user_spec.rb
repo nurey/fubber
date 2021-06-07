@@ -19,5 +19,14 @@ describe Fubber, :vcr do
       expect(parsed_response.dig('users', 0, 'name')).to eq('John Agent')
     end
   end
+
+  describe '.find_user_by_name' do
+    it 'responds with expected payload' do
+      response = fub_client.find_user_by_name('John Agent')
+      parsed_response = response.parsed_response
+      expect(parsed_response).not_to be_nil
+      expect(parsed_response.dig('users', 0, 'name')).to eq('John Agent')
+    end
+  end
 end
 
