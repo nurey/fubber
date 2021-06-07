@@ -48,7 +48,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Releasing
 
-- Change the version in lib/version.rb
+- Change the version in lib/fubber/version.rb
 - run `bundle` which will bump the version in Gemfile.lock
 
 To upload to Gemfury:
