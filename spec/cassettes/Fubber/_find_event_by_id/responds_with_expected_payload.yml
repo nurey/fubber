@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.followupboss.com/v1/events?id=7256400
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Source:
+      - zoocasa
+      X-System:
+      - zoocasa
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 Sep 2021 20:07:08 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Window:
+      - '10'
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '58'
+      X-Ratelimit-Context:
+      - events
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - 42488c76d283c434ae7f18bc26dc33fe
+    body:
+      encoding: UTF-8
+      string: '{"_metadata":{"collection":"events","offset":0,"limit":10,"total":1,"next":null,"nextLink":null},"events":[{"id":7256400,"created":"2021-09-29T20:05:56Z","updated":"2021-09-29T20:05:56Z","occurred":"2021-09-29T20:05:55Z","personId":302155,"message":"","description":"","additional":[],"noteId":null,"source":"<unspecified>","type":"Viewed
+        Property","pageTitle":"108 - 915 King St W, Toronto | For Sale at $XXX,XXX
+        | Zoocasa","pageUrl":"https:\/\/www.zoocasa.com\/toronto-on-real-estate\/108-915-king-st-w","pageDuration":0,"property":{"id":12725,"street":"108
+        King St W","city":"Toronto","state":"ON","code":"M5X","mlsNumber":"C4837018","price":"599900","forRent":"0","url":"https:\/\/www.zoocasa.com\/toronto-on-real-estate\/108-915-king-st-w","type":"","bedrooms":null,"bathrooms":null,"area":null,"lot":null,"lat":"43.648254","lng":"-79.382591"}}]}'
+  recorded_at: Wed, 29 Sep 2021 20:07:08 GMT
+recorded_with: VCR 6.0.0

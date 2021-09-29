@@ -49,6 +49,15 @@ describe Fubber, :vcr do
 
   let(:fub_client) { Fubber.client }
 
+  describe '.find_event_by_id' do
+    it 'responds with expected payload' do
+      response = fub_client.find_event_by_id(7256400)
+      parsed_response = response.parsed_response
+      expect(parsed_response).not_to be_nil
+      expect(parsed_response.dig('events', 0, 'type')).to eq('Viewed Property')
+    end
+  end
+
   describe '.create_event' do
     it 'responds with expected payload' do
       response = fub_client.create_event(event)
